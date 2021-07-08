@@ -11,8 +11,8 @@ server.use(express.json());
 server.use(express.static(path.join(__dirname, "client/build")));
 
 
-server.use("/api", (req, res) => {
-    res.json({ message: `What the heck is even going on right now on ${PORT}!?`})
+server.use("/api", (_, res) => {
+    res.json({ data: `What the heck is even going on right now on ${PORT}!?`})
 })
 
 server.listen(PORT, () => {
