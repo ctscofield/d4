@@ -4,7 +4,7 @@
   "scripts": {
     "server": "nodemon index.js",
     "start": "node index.js",
-    "heroku-post-build": "cd client && npm i && npm run build"
+    "heroku-postbuild": "cd client && npm i && npm run build"
   },
   "license": "ISC",
   "devDependencies": {
